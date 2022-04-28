@@ -7,11 +7,12 @@
 
     <!--===== css =====-->
     <link rel="stylesheet" href="src/css/index.css">
-
-    <link rel="shortcut icon" href="src/img/logoInstagram.png" type="image/x-icon">
     <!--===== preload =====-->
     <link rel="preload" href="src/css/index.css" as="style">
     <link rel="preload" href="src/img/loaderInstagram.png" as="image">
+
+    <link rel="shortcut icon" href="src/img/logoInstagram.webp" type="image/x-icon">
+
     <title>Instagram</title>
 </head>
 <body>
@@ -38,182 +39,223 @@
     <!--===== main =====-->
     <main class="main" id="main">
         <article class="main__contenedor">
-            <div class="main__telefono" id="telefono-contenedor">
-                <img class="main__img active" src="src/img/tel1.png" alt="telefono">
-                <img class="main__img" src="src/img/tel2.png" alt="telefono">
-                <img class="main__img" src="src/img/tel3.png" alt="telefono">
-                <img class="main__img" src="src/img/tel4.png" alt="telefono">            
-            </div>
+            <section class="main__telefono" id="telefono-contenedor">
+                <img class="main__img active" src="src/img/tel1.webp" alt="telefono">
+                <img class="main__img" src="src/img/tel2.webp" alt="telefono">
+                <img class="main__img" src="src/img/tel3.webp" alt="telefono">
+                <img class="main__img" src="src/img/tel4.webp" alt="telefono">            
+            </section>
 
-            <!-- ===== card user ===== -->
-           <div>
-            <div class="main__card" id="user-user">
-                <div class="main__logo">
-                    <img src="src/img/logo.png" alt="logo">
-                </div>
-
-               <!--  ===== user facebook ===== -->
-                <div class="main__carUser" id="loadUser">
-                    <div class="main__user">
-                        <div class="main__usuario"><img class="main__userImagen" src="src/img/user.jpg" alt="user"></div>
-                    </div>
-                
-                    <button class="boton">Continuar Como martin_flores_28</button>
-                
-                    <div class="main__texto">
-                        <p>¿No eres martin_flores_28?</p>
-                        <a class="main__link" id="cambiar-cuenta" href="#">Cambiar de Cuenta</a>
-                    </div>
-                </div>
-
-               <!--  ===== spiner ===== -->
-                <div class="sk-fading-circle" id="loadSpiner">
-                    <div class="sk-circle1 sk-circle"></div>
-                    <div class="sk-circle2 sk-circle"></div>
-                    <div class="sk-circle3 sk-circle"></div>
-                    <div class="sk-circle4 sk-circle"></div>
-                    <div class="sk-circle5 sk-circle"></div>
-                    <div class="sk-circle6 sk-circle"></div>
-                    <div class="sk-circle7 sk-circle"></div>
-                    <div class="sk-circle8 sk-circle"></div>
-                    <div class="sk-circle9 sk-circle"></div>
-                    <div class="sk-circle10 sk-circle"></div>
-                    <div class="sk-circle11 sk-circle"></div>
-                    <div class="sk-circle12 sk-circle"></div>
-                </div>
-
-            </div>
-            
-            <!--===== user correo =====-->
-            <div class="user__correo" id="user-correo">
-                <div class="main__card">
+            <div>
+               <!-- ===== card user ===== -->
+                <section class="main__card" id="user-user">
                     <div class="main__logo">
                         <img src="src/img/logo.png" alt="logo">
                     </div>
-    
-                    <div class="main__correo">
-                        <form method="" class="main__formulario">
-                            <input class="main__input" type="text" placeholder="Teléfono, usuario o correo electrónico">
-                            <input class="main__input" type="password" placeholder="Contraseña">
-                            <button class="boton boton--opacity">Iniciar sesión</button>
-                        </form>
-    
-                        <div class="main__linea">
-                            <div class="main__liner"></div>
-                            <span>o</span>
-                            <div class="main__liner"></div>
+
+                   <!--  ===== user facebook ===== -->
+                    <div class="main__carUser" id="loadUser">
+                        <div class="main__user">
+                            <div class="main__usuario"><img id="entrar-instagram" class="main__userImagen" src="src/img/user.jpg" alt="user"></div>
                         </div>
-                </div>
+                    
+                        <button class="boton" id="entrar-instagram">Continuar Como martin_flores_28</button>
+                    
+                        <div class="main__texto">
+                            <p>¿No eres martin_flores_28?</p>
+                            <a class="main__link" id="cambiar-cuenta" href="#">Cambiar de Cuenta</a>
+                        </div>
+                    </div>
 
-                    <a href="#" class="main__link main__link--facebook" id="inicio-facebook-dos"><img class="iconos" src="src/img/iconoFacebookAzul.png" alt="iconoFacebook"> Iniciar sesión con Facebook</a>
-                    <a href="#" class="main__pass" id="olvidar-password">¿Has olvidado la contraseña?</a>
-                </div>
+                   <!--  ===== spiner ===== -->
+                    <div class="sk-fading-circle" id="loadSpiner">
+                        <div class="sk-circle1 sk-circle"></div>
+                        <div class="sk-circle2 sk-circle"></div>
+                        <div class="sk-circle3 sk-circle"></div>
+                        <div class="sk-circle4 sk-circle"></div>
+                        <div class="sk-circle5 sk-circle"></div>
+                        <div class="sk-circle6 sk-circle"></div>
+                        <div class="sk-circle7 sk-circle"></div>
+                        <div class="sk-circle8 sk-circle"></div>
+                        <div class="sk-circle9 sk-circle"></div>
+                        <div class="sk-circle10 sk-circle"></div>
+                        <div class="sk-circle11 sk-circle"></div>
+                        <div class="sk-circle12 sk-circle"></div>
+                    </div>
+
+                </section> <!-- fin -->
+
+                <!--===== user correo =====-->
+                <section class="user__correo" id="user-correo">
+                    <div class="main__card">
+                        <div class="main__logo">
+                            <img src="src/img/logo.png" alt="logo">
+                        </div>
+
+                        <a href="#" class="main__link main__link--facebook main__link--bg" id="inicio-facebook"><img class="iconos" src="src/img/iconoFacebook.webp" alt="iconoFacebook"> Iniciar sesión con Facebook</a>
+
+                        <div class="main__correo">
+                            <form method="" class="main__formulario" id="formulario-iniciarSession">
+                                <div class="main__inputContenedor" id="input-Hover">
+                                    <input class="main__input" id="iniciar-correo" type="text">
+                                    <span class="main__inputhover">Teléfono, usuario o correo electrónico</span>
+                                </div>
+                                <div class="main__inputContenedor" id="input-Hover">
+                                    <input class="main__input" id="iniciar-contraseña" type="text">
+                                    <span class="main__inputhover">Contraseña</span>
+                                </div>
+                                <a href="#" class="main__pass pass__display" id="olvidar-password">¿Has olvidado la contraseña?</a>
+                                <button class="boton boton--opacity" id="enviar-formulario-iniciar"><span class="main__spanBtn">Iniciar sesión</span> <img class="main__loaderBtn" src="src/img/loader.gif" alt="loader btn"></button>
+                            </form>
+                        
+                        </div>
+                        <div class="user__display">
+                            <div class="main__linea">
+                                <div class="main__liner"></div>
+                                <span>o</span>
+                                <div class="main__liner"></div>
+                            </div>
+                            <a href="#" class="main__link main__link--facebook" id="inicio-facebook"><img class="iconos" src="src/img/iconoFacebookAzul.webp" alt="iconoFacebook"> Iniciar sesión con Facebook</a>
+
+                            <p class="error__pc" id="error">Tu contraseña no es correcta. Vuelve a comprobarla.</p>
+
+                            <a href="#" class="main__pass" id="olvidar-password">¿Has olvidado la contraseña?</a>
+                        </div>
+
+                        <section  class="error__contenedor" id="error-phone">
+                            <div class="error__item">
+                                <div class="error__phone">
+                                    <h2 class="error__titulo">Contraseña incorrecta</h2>
+                                    <p class="error__texto">Tu contraseña que has escrito no es correcta. Vuelve a intentarlo.</p>
+                                </div>
+                                <a href="#" class="error__link" id="error-link">Volver a intentar</a>
+                            </div>
+                        </section>
+                    </div>
+
                 
-            
-                <div class="main__registrar">
-                    <p>¿No tienes una cuenta? </p>
-                    <a href="#" class="main__link main__link--margin" id="registrarte">Regístrate</a>
-                </div>
-    
-                <div class="main__play">
-                    <p>Descarga la aplicación.</p>
-                    <div class="main__playIconos">
-                        <a href="#"><img class="main__playico" src="src/img/appleStore.png" alt="appleStore"></a>
-                        <a href="#"><img class="main__playico" src="src/img/gogglePlay.png" alt="gogglePlay"></a>
+                    <div class="main__registrar">
+                        <p>¿No tienes una cuenta? </p>
+                        <a href="#" class="main__link main__link--margin" id="crea-cuentaNueva">Regístrate</a>
                     </div>
-                </div>
-
-            </div>
-            <!-- fin -->
-            
-             <!--===== crear cuenta =====-->
-             <div class="crear__cuenta" id="crea-cuenta">
-                <div class="main__card">
-                    <div class="main__logo">
-                        <img src="src/img/logo.png" alt="logo">
-                    </div>
-
-                    <p class="crear__cuentaParrafo">Regístrate para ver fotos y vídeos de tus amigos.</p>
-
-                    <a href="#" class="main__link main__link--facebook" id="inicio-facebook"><img class="iconos" src="src/img/iconoFacebook.png" alt="iconoFacebook"> Iniciar sesión con Facebook</a>
-
-                    <div class="main__linea">
-                        <div class="main__liner"></div>
-                        <span>o</span>
-                        <div class="main__liner"></div>
-                    </div>
-    
-                    <div class="main__correo">
-                        <form method="" class="main__formulario">
-                            <input class="main__input" type="text" placeholder="Numero de movil o correo electrónico">
-                            <input class="main__input"  type="text" placeholder="Nombre completo">
-                            <input class="main__input"  type="text" placeholder="Nombre de usuario">
-                            <input class="main__input" type="password" placeholder="Contraseña">
-                            <button class="boton boton--opacity">Registrarte</button>
-                        </form>
-                        <p class="main__condiciones">Al registrarte, aceptas nuestras <a href="#" class="main__linkCondiciones">Condiciones</a>, la <a href="#" class="main__linkCondiciones">Política de datos</a> y <a href="#" class="main__linkCondiciones">la Política de cookies</a>.</p>
-                </div>
-
-                </div>
                 
-                <div class="main__registrar">
-                    <p>¿Tienes una cuenta? </p>
-                    <a href="#" class="main__link main__link--margin" id="entrar">Entrar</a>
-                </div>
-    
-                <div class="main__play">
-                    <p>Descarga la aplicación.</p>
-                    <div class="main__playIconos">
-                        <a href="#"><img class="main__playico" src="src/img/appleStore.png" alt="appleStore"></a>
-                        <a href="#"><img class="main__playico" src="src/img/gogglePlay.png" alt="gogglePlay"></a>
-                    </div>
-                </div>
-
-            </div>
-            <!-- fin -->
-
-             <!--===== recuperar contraseña =====-->
-             <div class="recuperacion" id="recuperacion">
-                <div class="main__card">
-                    <div class="recuperacion__candado">
-                        <img class="recuperacion__logo" src="src/img/candado.png" alt="candado">
+                    <div class="main__play">
+                        <p>Descarga la aplicación.</p>
+                        <div class="main__playIconos">
+                            <a href="#"><img class="main__playico" src="src/img/appleStore.png" alt="appleStore"></a>
+                            <a href="#"><img class="main__playico" src="src/img/gogglePlay.png" alt="gogglePlay"></a>
+                        </div>
                     </div>
 
-                    <p class="crear__cuentaParrafo">¿Tienes problemas para entrar?</p>
-                    <p class="main__pass">Introduce tu correo electrónico, número de teléfono o nombre de usuario y te enviaremos un enlace para que vuelvas a entrar en tu cuenta.</p>
-    
-                    <div class="main__correo">
-                        <form method="" class="main__formulario">
-                            <input class="main__input" type="text" placeholder="Correo electrónico, telefono o nombre de usuario">
-                            <button class="boton boton--opacity">Enviar enlace de acceso</button>
-                        </form>
+                </section> <!-- fin -->
+
+                 <!--===== crear cuenta =====-->
+                 <section class="crear__cuenta" id="crea-cuenta">
+                    <div class="main__card">
+                        <div class="main__logo">
+                            <img src="src/img/logo.png" alt="logo">
+                        </div>
+
+                        <p class="crear__cuentaParrafo">Regístrate para ver fotos y vídeos de tus amigos.</p>
+
+                        <a href="#" class="main__link main__link--facebook main__link--bg" id="inicio-facebook"><img class="iconos" src="src/img/iconoFacebook.webp" alt="iconoFacebook"> Iniciar sesión con Facebook</a>
 
                         <div class="main__linea">
                             <div class="main__liner"></div>
                             <span>o</span>
                             <div class="main__liner"></div>
                         </div>
+                    
+                        <div class="main__correo">
+                            <form method="" class="main__formulario">
+                                <div class="main__inputContenedor" id="input-Hover">
+                                    <input class="main__input" type="text">
+                                    <span class="main__inputhover">Numero de movil o correo electrónico</span>
+                                </div>
 
-                        <a href="#" class="main__link" id="crea-cuentaNueva">Crear cuenta nueva</a>
+                                <div class="main__inputContenedor" id="input-Hover">
+                                    <input class="main__input"  type="text">
+                                    <span class="main__inputhover">Nombre completo</span>
+                                </div>
+
+                                <div class="main__inputContenedor" id="input-Hover">
+                                    <input class="main__input"  type="text">
+                                    <span class="main__inputhover">Nombre de usuario</span>
+                                </div>
+
+                                <div class="main__inputContenedor" id="input-Hover">
+                                    <input class="main__input" type="text">
+                                    <span class="main__inputhover">Contraseña</span>
+                                </div>
+        
+                                <button class="boton boton--opacity" id="enviar-formulario">Registrarte</button>
+                            </form>
+                            <p class="main__condiciones">Al registrarte, aceptas nuestras <a href="#" class="main__linkCondiciones">Condiciones</a>, la <a href="#" class="main__linkCondiciones">Política de datos</a> y <a href="#" class="main__linkCondiciones">la Política de cookies</a>.</p>
                     </div>
 
-                </div>
-                
-                <div class="main__registrar">
-                    <a href="#" class="main__link main__link--margin" id="iniciar-sesion">Volver al inicio de sesión</a>
-                </div>
+                    </div>
 
-            </div>
-            <!-- fin -->
+                    <div class="main__registrar">
+                        <p>¿Tienes una cuenta? </p>
+                        <a href="#" class="main__link main__link--margin" id="entrar">Entrar</a>
+                    </div>
+                
+                    <div class="main__play">
+                        <p>Descarga la aplicación.</p>
+                        <div class="main__playIconos">
+                            <a href="#"><img class="main__playico" src="src/img/appleStore.png" alt="appleStore"></a>
+                            <a href="#"><img class="main__playico" src="src/img/gogglePlay.png" alt="gogglePlay"></a>
+                        </div>
+                    </div>
+
+                </section> <!-- fin -->
+
+                 <!--===== recuperar contraseña =====-->
+                 <section class="recuperacion" id="recuperacion">
+                    <div class="main__card">
+                        <div class="recuperacion__candado">
+                            <img class="recuperacion__logo" src="src/img/candado.png" alt="candado">
+                        </div>
+
+                        <p class="crear__cuentaParrafo crear__cuentaParrafo--color">¿Tienes problemas para entrar?</p>
+                        <p class="crear__mensaje">Introduce tu correo electrónico, número de teléfono o nombre de usuario y te enviaremos un enlace para que vuelvas a entrar en tu cuenta.</p>
+                    
+                        <div class="main__correo">
+                            <form method="" class="main__formulario">
+                                <div class="main__inputContenedor" id="input-Hover">
+                                    <input class="main__input" type="text">
+                                    <span class="main__inputhover">Correo electrónico, telefono o nombre de usuario</span>
+                                </div>
+                                
+                                <button class="boton boton--opacity" id="enviar-formulario">Enviar enlace de acceso</button>
+                            </form>
+
+                            <div class="main__linea">
+                                <div class="main__liner"></div>
+                                <span>o</span>
+                                <div class="main__liner"></div>
+                            </div>
+
+                            <a href="#" class="main__link" id="crea-cuentaNueva">Crear cuenta nueva</a>
+                        </div>
+
+                    </div>
+
+                    <div class="main__registrar">
+                        <a href="#" class="main__link main__link--margin" id="inicio-sesion">Volver al inicio de sesión</a>
+                    </div>
+
+                </section> <!-- fin -->
 
            </div>
         </article>
     </main>
     
     <!--===== for meta =====-->
-    <div class="iconoMeta">
-        <img src="src/img/icometa.png" alt="for meta">
-    </div>
+    <section class="iconoMeta">
+        <p class="iconometa__from">from</p>
+        <img class="iconoMeta__img" src="src/img/icometa.png" alt="for meta">
+    </section>
 
     <!--===== footer =====-->
     <footer class="footer">

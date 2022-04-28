@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--===== sglider =====-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!--===== css =====-->
+    <link rel="stylesheet" href="../css/inicio.css">
+    <!--===== box icons =====-->
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+
+    <!--===== preload =====-->
+    <link rel="preload" href="../css/inicio.css" as="style">
+    <link rel="preload" href="../img/loaderInstagram.png" as="image">
+
+    <link rel="shortcut icon" href="../img/logoInstagram.webp" type="image/x-icon">
+
+    <title>Instagram</title>
+</head>
+<body>
+    <div class="loader">
+        <img class="loaderimg" src="../img/loaderInstagram.png" alt="loader">
+    </div>
+
+    <!--===== header =====-->
+    <header class="header" id="header-event">
+        <section class="header__contenedor max__width">
+            <div class="header__phone">
+                <i class='bx bx-camera'></i>
+            </div>
+            <div class="header__logo">
+                <a href="../../index.html">
+                    <img class="header__logoimagen" src="../img/logo.png" alt="logoInstagram">
+                </a>
+            </div>
+            <div class="header__phone">
+                <i class='bx bxl-messenger'></i>
+            </div>
+            <section class="header__rigth">
+                <div class="buscador" id="buscador">
+                    <i class='bx bx-search buscador__ico' id="buscador-search"></i>
+                    <input class="buscador__input" type="text" placeholder="Buscar">
+                    <i class='bx bxs-x-circle buscador__ico' id="buscador-close"></i>
+                </div>
+                
+                <div class="navegacion">
+                    <div class="ico active">
+                        <i class='bx bx-home-alt bx__home'></i>
+                        <i class='bx bxs-home bxs__home'></i>
+                    </div>
+
+                    <div class="ico">
+                        <i class='bx bxl-messenger'></i>
+                    </div>
+
+                    <div class="ico">
+                        <i class='bx bx-message-square-add bx__message'></i>
+                        <i class='bx bxs-message-square-add bxs__message' ></i>
+                    </div>
+
+                    <div class="ico">
+                        <i class='bx bx-compass bx__compass' ></i>
+                        <i class='bx bxs-compass bxs__compass' ></i>
+                    </div>
+                    
+                    <div class="ico">
+                        <i class='bx bx-heart  bx__heart'></i>
+                        <i class='bx bxs-heart  bxs__heart'></i>
+                    </div>
+
+                    <div class="ico" id="user-toggle">
+                        <img class="header__user" src="../img/user.jpg" alt="user">
+                    </div>
+
+                    <section class="user" id="user">
+                        <div class="cubito"></div>
+                        <div class="user__contenedor">
+                             <div class="user__item">
+                                 <i class='bx bxs-user-circle user__ico'></i>
+                                 <span>Perfil</span>
+                             </div>
+                         
+                             <div class="user__item">
+                                 <i class='bx bx-bookmark user__ico'></i>
+                                 <span>Guardados</span>
+                             </div>
+                         
+                             <div class="user__item">
+                                 <i class='bx bx-cog user__ico' ></i>
+                                 <span>Configuracion</span>
+                             </div>
+                         
+                             <div class="user__item">
+                                 <i class='bx bx-refresh user__ico'></i>
+                                 <span>Cambiar de cuenta</span>
+                             </div>
+                        </div>
+
+                        <div class="user__item user__shadow">
+                            <i class='bx bx-log-out-circle user__ico'></i>
+                            <span>Cerrar sesion</span>
+                        </div>
+
+                     </section>
+
+                   
+                </div>
+                <!-- <i class='bx bx-menu'></i>
+                <i class='bx bx-x'></i>
+                <i class='bx bx-loader-circle bx-spin' ></i>
+                <i class='bx bx-loader bx-spin' ></i>
+                <i class='bx bxl-meta'></i> 
+            
+                -->
+            </section>
+        </section>
+    </header>
+
+    <!--===== main =====-->
+    <main class="contenido max__width">
+        <!--===== aplicacion =====-->
+        <section class="aplicacion">
+
+            <div class="spinerTop">
+                <i class='bx bx-loader bx-spin spinerLoaderTop' ></i>
+            </div>
+            <!--===== barra estados =====-->
+            <section class="estados">
+                <div class="estados__contenedor" id="estados">
+                   <!--===== rellena con js =====-->
+                </div>
+            </section>
+
+            <!--===== barra sugerencias =====--> 
+            <section class="sugerencias">
+                <div class="sugerencias__top">
+                    <span class="sugerencias__texto">Sugerencias para ti</span>
+                    <a href="#" class="enlace" id="ver-todosTop">Ver todo</a>
+                </div>
+
+                <div class="sugerencias__contenedor swiper mySwiper">
+                   <div class="sugerencias__contenido swiper-wrapper" id="sugerencia-top">
+                       <!--===== rellena con js =====-->
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+
+            <!--===== publicaciones =====-->
+            <section class="publicaciones">
+            </section>
+
+            <!--===== sugerencias =====-->
+            <section class="sugerencias">
+                <div class="sugerencias__top">
+                    <span class="sugerencias__texto">Sugerencias para ti</span>
+                    <a href="#" class="enlace" id="ver-todosBottom">Ver todo</a>
+                </div>
+
+                <div class="sugerencias__contenedor swiper mySwiper">
+                   <div class="sugerencias__contenido swiper-wrapper" id="sugerencias-bottom">
+                      <!--===== rellena con js =====-->
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+        </section>
+
+        <!-- <i class='bx bxs-badge-check'></i> -->
+        
+        <aside class="aside">
+            <section class="aside__contenedor">
+                <div class="aside__top">
+                    <a href="#" class="aside__user"><img class="aside__img" src="../img/user.jpg" alt="user"></a>
+                    <div class="aside__texto">
+                        <a href="#" class="aside__titulo">martin_flores_28</a>
+                        <p class="aside__parrafo">Martin Flores</p>
+                    </div>
+                    <a class="enlace" href="#">Cambiar</a>
+                </div>
+
+                <div class="aside__center">
+                    <div class="asider__barra">
+                        <p>Sugerencias para ti</p>
+                        <a class="aside__ver" href="#">Ver todo</a>
+                    </div>
+
+                    <div>
+                        <div class="aside__item">
+                            <a href="#" class="aside__user"><img class="aside__img" src="../img/user7.jpg" alt="user"></a>
+                            <div class="aside__texto">
+                                <a href="#" class="aside__titulo">axel</a>
+                                <p class="aside__parrafo">Te sigue</p>
+                            </div>
+                            <div class="enlace__item">
+                                <a class="enlace" href="#">Seguir</a>
+                                <a href="#" class="enlaceSiguiendo">Siguiendo</a>
+                            </div>
+                        </div>
+
+                        <div class="aside__item">
+                            <a href="#" class="aside__user"><img class="aside__img" src="../img/user2.jpg" alt="user"></a>
+                            <div class="aside__texto">
+                                <a href="#" class="aside__titulo">Soyfranpe1</a>
+                                <p class="aside__parrafo">Soyfranpe1 y 3 más siguen...</p>
+                            </div>
+                            <div class="enlace__item">
+                                <a class="enlace" href="#">Seguir</a>
+                                <a href="#" class="enlaceSiguiendo">Siguiendo</a>
+                            </div>
+                        </div>
+
+                        <div class="aside__item">
+                            <a href="#" class="aside__user"><img class="aside__img" src="../img/user3.jpg" alt="user"></a>
+                            <div class="aside__texto">
+                                <a href="#" class="aside__titulo">Mateo</a>
+                                <p class="aside__parrafo">paolamacalupu03 y 2 más siguen...</p>
+                            </div>
+                            <div class="enlace__item">
+                                <a class="enlace" href="#">Seguir</a>
+                                <a href="#" class="enlaceSiguiendo">Siguiendo</a>
+                            </div>
+                        </div>
+
+                        <div class="aside__item">
+                            <a href="#" class="aside__user"><img class="aside__img" src="../img/user4.jpg" alt="user"></a>
+                            <div class="aside__texto">
+                                <a href="#" class="aside__titulo">James</a>
+                                <p class="aside__parrafo">Soyfranpe1 y 2 más siguen...</p>
+                            </div>
+                            <div class="enlace__item">
+                                <a class="enlace" href="#">Seguir</a>
+                                <a href="#" class="enlaceSiguiendo">Siguiendo</a>
+                            </div>
+                        </div>
+
+                        <div class="aside__item">
+                            <a href="#" class="aside__user"><img class="aside__img" src="../img/user5.jpg" alt="user"></a>
+                            <div class="aside__texto">
+                                <a href="#" class="aside__titulo">Sebastian</a>
+                                <p class="aside__parrafo">Nuevo en Instagram</p>
+                            </div>
+                            <div class="enlace__item">
+                                <a class="enlace" href="#">Seguir</a>
+                                <a href="#" class="enlaceSiguiendo">Siguiendo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!--===== footer =====-->
+                <footer class="footer">
+                    <div class="footer__top">
+                        <a class="footer__link" href="#">Información</a>
+                        <a class="footer__link" href="#">Ayuda</a>
+                        <a class="footer__link" href="#">Prensa</a>
+                        <a class="footer__link" href="#">API</a>
+                        <a class="footer__link" href="#">Empleo</a>
+                        <a class="footer__link" href="#">Privacidad</a>
+                        <a class="footer__link" href="#">Condiciones</a>
+                        <a class="footer__link" href="#">Ubicaciones</a>
+                        <a class="footer__link" href="#">Cuentas Destacadas</a>
+                        <a class="footer__link" href="#">Hashtags</a>
+                        <a class="footer__link" href="#">Idioma</a>
+
+                        <p class="footer__copi">© 2022 Instagram from Meta</p>
+                    </div>
+                </footer>
+            </section>
+        </aside>
+    </main>
+    
+    <!--===== menubar phone =====-->
+    <section class="menubar__bottom">
+        <div class="footer__aplication">
+            <div></div>
+            <a href="#" class="enlace">Usar la aplicacion</a>
+            <i class='bx bx-x' id="aplication-close" ></i>
+        </div>
+    
+        <section class="navegacion footer__menubar">
+            <a href="#" class="ico active">
+                <i class='bx bx-home-alt bx__home'></i>
+                <i class='bx bxs-home bxs__home'></i>
+            </a>
+    
+            <a href="#" class="ico">
+                <i class='bx bxl-messenger'></i>
+            </a>
+    
+            <a href="#" class="ico">
+                <i class='bx bx-message-square-add bx__message'></i>
+                <i class='bx bxs-message-square-add bxs__message' ></i>
+            </a>
+    
+            <a href="#" class="ico">
+                <i class='bx bx-compass bx__compass' ></i>
+                <i class='bx bxs-compass bxs__compass' ></i>
+            </a>
+    
+            <a href="#" class="ico">
+                <i class='bx bx-heart  bx__heart'></i>
+                <i class='bx bxs-heart  bxs__heart'></i>
+            </a>
+    
+            <a href="#" class="ico">
+                <img class="header__user" src="../img/user.jpg" alt="user">
+            </a>
+        </section>
+    </section>
+
+    <!--===== js =====-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/datos.js"></script>
+    <script src="../js/inicio.js"></script>
+</body>
+</html>
